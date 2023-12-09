@@ -9,55 +9,55 @@ class Group
         SET self._unique_code = unique_code
         SET self._transactions = transactions
     
-    Call property
+    CALL property
     MODULE group_name(self)
         RETURN self._group_name
     
-    Call property
+    CALL property
     MODULE created_by(self)
         RETURN self._created_by
     
-    Call created_by.setter
+    CALL created_by.setter
     MODULE created_by(self, created_by: str)
         SET self._created_by = created_by
     
-    Call property
+    CALL property
     MODULE description(self)
         RETURN self._description
     
-    Call description.setter
+    CALL description.setter
     MODULE description(self, description: str)
         SETself._description = description
     
-    Call property
+    CALL property
     MODULE members(self)
         RETURN self._members
     
-    Call members.setter
+    CALL members.setter
     MODULE members(self, members: list)
         SET self._members = members
     
-    Call property
+    CALL property
     MODULE picture_id(self)
         RETURN self._picture_id
     
-    Call picture_id.setter
+    CALL picture_id.setter
     MODULE picture_id(self, picture_id: str)
         SET self._picture_id = picture_id
     
-    Call property
+    CALL property
     MODULE unique_code(self)
         RETURN self._unique_code
     
-    Call unique_code.setter
+    CALL unique_code.setter
     MODULE unique_code(self, unique_code: str)
         SET self._unique_code = unique_code
     
-    Call property
+    CALL property
     MODULE transactions(self)
         RETURN self._transactions
     
-    Call transactions.setter
+    CALL transactions.setter
     MODULE transactions(self, transactions: list)
         SET self._transactions = transactions
 END
