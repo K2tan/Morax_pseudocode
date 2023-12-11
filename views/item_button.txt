@@ -35,7 +35,7 @@ CREATE class ItemButton(ft.ElevatedButton)
             horizontal_alignment=ft.CrossAxisAlignment.CENTER
         )
         
-        aET account_container = ft.Container(
+        SET account_container = ft.Container(
             content=account_column,
             padding=ft.padding.only(10, 10, 10, 0)
         )
