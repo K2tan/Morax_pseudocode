@@ -161,7 +161,7 @@ CREATE class ItemInfoDialog(ft.AlertDialog)
             )
         )
         
-        SE Tself.proof_column = ft.Column(
+        SET self.proof_column = ft.Column(
             width = 480,
             height = 150,
             controls=[self.payment_preview_image, self.upload_proof_button],
