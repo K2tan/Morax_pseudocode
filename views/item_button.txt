@@ -97,7 +97,7 @@ CREATE class ItemButton(ft.ElevatedButton)
         )
         
         IF item_image_string != "" THEN
-            self.item_image.src_base64 = item_image_string
+            SET self.item_image.src_base64 = item_image_string
         
         SET self.amount = ft.Text(
             transaction_price,
