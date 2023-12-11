@@ -207,11 +207,11 @@ CREATE class HomePage()
         ADD self.page.update()
     
     MODULE show_edit_username_dialog(self)
-        self.page.dialog = self.edit_username_dialog
-        self.edit_username_dialog.open = True
-        self.page.update()
+        SET self.page.dialog = self.edit_username_dialog
+        SET self.edit_username_dialog.open = True
+        ADD self.page.update()
     
-    def show_edit_password_dialog(self):
+    MODULE show_edit_password_dialog(self)
         SET self.page.dialog = self.edit_password_dialog
         SET self.edit_password_dialog.open = True
         ADD self.page.update()
@@ -239,7 +239,7 @@ CREATE class HomePage()
         
         SET self.sidebar_container.bgcolor = colors["white"]
         
-        ET self.view.bgcolor = colors["f8fafc"]
+        SET self.view.bgcolor = colors["f8fafc"]
         ADD self.update_subviews TO (colors)
     
     MODULE update_subviews(self, colors)
